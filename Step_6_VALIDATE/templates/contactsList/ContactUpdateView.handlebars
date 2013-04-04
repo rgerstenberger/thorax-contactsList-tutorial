@@ -1,0 +1,13 @@
+{{#if id}}
+{{#link "detail/{{id}}" tag="button" expand-tokens=true}}Cancel{{/link}}
+{{else}}
+{{#link "home" tag="button"}}Cancel{{/link}}
+{{/if}}
+
+<form>
+	<p><Label for="firstname">First Name: <input name="firstname"></Label></p>
+	<p><Label>Last Name:<input name="lastname"></Label></p>
+	<p><Label>Email: <input name="email"></Label></p>
+	<p><Label>Phone: <input name="phone"></Label></p>
+	<input type="submit" value="save">
+</form>
